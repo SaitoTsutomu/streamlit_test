@@ -8,5 +8,6 @@ if s:
     try:
         result = df.query(s)
         st.dataframe(result)
+        st.write(len(result), "行")
     except:
         st.error("クエリを正しくしてください")
